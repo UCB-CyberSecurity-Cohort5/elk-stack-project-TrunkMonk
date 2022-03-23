@@ -10,7 +10,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ELK Install Playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  <a href="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/playbooks/install-elk.yml" target="_blank">ELK Install Playbook</a></br>
+  <a href="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/playbooks/install-elk.yml">ELK Install Playbook</a></br>
   <a href="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/playbooks/filebeat-playbook.yml">Filebeat Install Playbook</a></br>
   <a href="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/playbooks/metricbeat-playbook.yml">Metricbeat Install Playbook</a></br>
 

@@ -8,9 +8,9 @@ The files in this repository were used to configure the network depicted below.
 
 <img src="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/4cab63543b5665acc11fcc4a5abdcaac2d89cf43/images/Azure%20Docker%20ELK%20Stack.png" style="max-width: 60%;"/>
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  <a href="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/1cf1660dd31b3dff668d298aff1f05146ab23e7f/playbooks/filebeat-playbook.yml">filebeat-playbook.yml</a>
 
 This document contains the following details:
 - Description of the Topology

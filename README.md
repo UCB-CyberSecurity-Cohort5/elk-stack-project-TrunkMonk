@@ -8,9 +8,11 @@ The files in this repository were used to configure the network depicted below.
 
 <img src="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/4cab63543b5665acc11fcc4a5abdcaac2d89cf43/images/Azure%20Docker%20ELK%20Stack.png" style="max-width: 60%;"/>
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ELK Install Playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  <a href="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/playbooks/install-elk.yml">install-elk.yml playbook</a>
+  <a href="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/playbooks/install-elk.yml">ELK Install Playbook</a>
+  <a href="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/playbooks/filebeat-playbook.yml">Filebeat Install Playbook</a>
+  <a href="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/playbooks/metricbeat-playbook.yml">Metricbeat Install Playbook</a>
 
 This document contains the following details:
 - Description of the Topology

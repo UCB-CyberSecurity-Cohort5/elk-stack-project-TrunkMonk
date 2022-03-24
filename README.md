@@ -1,7 +1,5 @@
 # ELK-Stack-Project
-Project 1 - ELK Stack Project
 
-## Fill in this as your project documentation
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
@@ -27,18 +25,19 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the web application will be highly available, in addition to restricting access to the network.
+- In addition to high availability and access restriction, load balancers also help to mitigate Distributed Denial of Service (DDoS) attacks by detecting and dropping traffic before it reaches web servers. Load balancers also improve the efficiency of content delivery by distributing traffic across multiple web servers while also providing resiliency and scalability of web server pools.
+- A Jump Box acts as a gateway to provided highly restricted ingress access to the corporate network via SSH.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system metrics.
+- Filebeat watches for changes in log files
+- Metricbeat records related datasets and system metrics from various sources on servers or services.
 
 The configuration details of each machine may be found below.
 
 | **Name** | **Function** | **IP Address** | **Operating System** |
 |----------|--------------|----------------|----------------------|
-| Jump Box | Gateway      | 10.0.0.4       | Linux Ubuntu 18.04   |
+| Jump Box | SSH Gateway  | 10.0.0.4       | Linux Ubuntu 18.04   |
 | Web-1    | Web server   | 10.0.0.5       | Linux Ubuntu 18.04   |
 | Web-2    | Web server   | 10.0.0.6       | Linux Ubuntu 18.04   |
 | Web-3    | Web server   | 10.0.0.7       | Linux Ubuntu 18.04   |
@@ -55,14 +54,14 @@ Machines within the network can only be accessed by the Jump Box.
 
 A summary of the access policies in place can be found in the table below.
 
-| **Name**   |**Publicy Accesible**|**Allowed IP Addresses**|
-|---------------|-------------------|----------------------|
-| Jump Box      | Yes               | My public IP address |
-| Web-1         | No                | 10.0.0.0/24          |
-| Web-2         | No                | 10.0.0.0/24          |
-| Web-3         | No                | 10.0.0.0/24          |
-| Load Balancer | Yes               | ANY                  |
-| ELK           | Yes               | My public IP address |
+| **Name**      | **Publicly Accessible** | **Allowed IP Address** |
+|---------------|:-----------------------:|------------------------|
+| Jump Box      |           Yes           | My Public IP Address   |
+| Web-1         |            No           | 10.0.0.0/24            |
+| Web-2         |            No           | 10.0.0.0/24            |
+| Web-3         |            No           | 10.0.0.0/24            |
+| Load Balancer |           Yes           | Any                    |
+| ELK           |           Yes           | My Public IP Address   |
 
 ### Elk Configuration
 

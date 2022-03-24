@@ -98,8 +98,9 @@ SSH into the control node and follow the steps below:
 <img src="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/images/Ansible_hosts_file.png" style="max-width: 100%;"/>
 
 - Run the playbook, and navigate to the http://ELKVM-PUBLIC-IP:5061 to check that the installation worked as expected.
-- The playbook is install-elk.yml and should reside in /etc/ansible/
-- The /etc/ansible/hosts.yml  How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- The playbook is install-elk.yml and should reside in /etc/ansible/ on Ansible Control node
+- The playbook will run against the groups defined /etc/ansible/hosts/hosts.yml, where IP addresses for each group are recorded.
+- To check that your ELK server is running, navigate to http://ELKVM-PUBLIC-IP:5061
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+### Commands to Download the Playbook, Update the Files and Run the Playbook
+- 

@@ -36,14 +36,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-| Name                 | Function  | IP Address | Operating System   |
-|----------------------|-----------|------------|--------------------|
-| Jump Box Provisioner | Gateway   | 10.0.0.4   | Linux Ubuntu 18.04 |
-| Web-1                | Webserver | 10.0.0.5   | Linux Ubuntu 18.04 |
-| Web-2                | Webserver | 10.0.0.6   | Linux Ubuntu 18.04 |
-| Web-3                | Webserver | 10.0.0.7   | Linux Ubuntu 18.04 |
-| ELK                  | ELK Stack | 10.1.0.4   | Linux Ubuntu 18.04 |
-
+| **Name** | **Function** | **IP Address** | **Operating System** |
+|----------|--------------|----------------|----------------------|
+| Jump Box | Gateway      | 10.0.0.4       | Linux Ubuntu 18.04   |
+| Web-1    | Web server   | 10.0.0.5       | Linux Ubuntu 18.04   |
+| Web-2    | Web server   | 10.0.0.6       | Linux Ubuntu 18.04   |
+| Web-3    | Web server   | 10.0.0.7       | Linux Ubuntu 18.04   |
+| ELK      | ELK Stack    | 10.1.0.4       | Linux Ubuntu 18.04   |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
@@ -51,12 +50,12 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - My public IP address
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by the Jump Box.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
 A summary of the access policies in place can be found in the table below.
 
-| Name          | Publicy Accesible | Allowed IP Addresses |
+| **Name**   |**Publicy Accesible**|**Allowed IP Addresses**|
 |---------------|-------------------|----------------------|
 | Jump Box      | Yes               | My public IP address |
 | Web-1         | No                | 10.0.0.0/24          |

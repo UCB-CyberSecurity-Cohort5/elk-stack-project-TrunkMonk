@@ -97,7 +97,7 @@ SSH into the control node and follow the steps below:
 - Update the /etc/ansible/hosts/hosts.yml file to define the IPs of the webservers, add an [elk] group, and specify the IP address of the ELK VM you created in Azure
 <img src="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/images/Ansible_hosts_file.png" style="max-width: 100%;"/>
 
-- Run the playbook, and navigate to the http://<ELKVM-PUBLIC-IP>:5061 to check that the installation worked as expected.
+- Run the playbook, and navigate to the http://ELKVM-PUBLIC-IP:5061 to check that the installation worked as expected.
 - The playbook is install-elk.yml and should reside in /etc/ansible/
 - The /etc/ansible/hosts.yml  How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?

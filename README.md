@@ -99,7 +99,7 @@ SSH into the control node and follow the steps below:
 
 - Run the playbook, and navigate to the http://ELKVM-PUBLIC-IP:5061 to check that the installation worked as expected.
 - The playbook is install-elk.yml and should reside in /etc/ansible/ on the Ansible Control node
-- The playbook will run against the groups defined in /etc/ansible/hosts.yml, where IP addresses for each group are recorded.
+- The playbook will run against the groups defined in /etc/ansible/hosts, where IP addresses for each group are recorded.
 - To check that your ELK server is running, navigate to http://ELKVM-PUBLIC-IP:5061
 
 ### Commands to Update the Files and Run the Playbook

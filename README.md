@@ -94,13 +94,14 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the install-elk.yml file to the Ansible control node.
-- Update the /etc/ansible/hosts/hosts.yml file to define the IPs of the webservers, add an [elk] group, and specify the IP address of the ELK VM you created in Azure
+- Update the Ansible Inventory file at /etc/ansible/hosts which defines the IPs of the webservers, add an [elk] group, and specify the IP address of the ELK VM you created in Azure
 <img src="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/images/Ansible_hosts_file.png" style="max-width: 100%;"/>
 
 - Run the playbook, and navigate to the http://ELKVM-PUBLIC-IP:5061 to check that the installation worked as expected.
-- The playbook is install-elk.yml and should reside in /etc/ansible/ on Ansible Control node
-- The playbook will run against the groups defined /etc/ansible/hosts/hosts.yml, where IP addresses for each group are recorded.
+- The playbook is install-elk.yml and should reside in /etc/ansible/ on the Ansible Control node
+- The playbook will run against the groups defined in /etc/ansible/hosts.yml, where IP addresses for each group are recorded.
 - To check that your ELK server is running, navigate to http://ELKVM-PUBLIC-IP:5061
 
-### Commands to Download the Playbook, Update the Files and Run the Playbook
-- 
+### Commands to Update the Files and Run the Playbook
+- To update your Ansible Inventory:  nano /etc/ansible/hosts
+- To run an Ansible playbook:  ansible-playbook install-elk.yml

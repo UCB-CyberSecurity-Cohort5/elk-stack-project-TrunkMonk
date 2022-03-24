@@ -86,20 +86,20 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat - When installed on a VM, Filebeat collects log files from the file system, various applications or services on the host then forwards the data to Logstash for processing.  For example, we can use Filebeat to gather authentication logs from the file system to more easily analyze the volume, frequency, source location, successes, and failures of SSH logins to a monitored host.
-- Metricbeat - When installed on a VM, Metric beat collects machine metrics such as uptime, service and system performance and sends this data to Logstash for processing.   Some of the metrics we might expect to see are the number of Docker containers on a machine, their memory usage, CPU usage, network and disk IO.
+- Filebeat - When installed on a machine, Filebeat collects log files on the host then forwards the data to Logstash for processing.  For example, we can use Filebeat to gather authentication logs from the file system to more easily analyze the volume, frequency, source location, successes, and failures of SSH logins to a monitored host.
+- Metricbeat - When installed on a machine, Metric beat collects machine metrics such as uptime, service and system performance and sends this data to Logstash for processing.   Some of the metrics we might expect to see are the number of Docker containers on a machine, their memory usage, CPU usage, network and disk IO.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the install-elk.yml file to the Ansible control node.
+- Update the /etc/ansible/hosts/hosts.yml file to define the IPs of the webservers, add an [elk] group, and specify the IP address of the ELK VM you created in Azure
+<img src="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-TrunkMonk/blob/main/images/Ansible_hosts_file.png" style="max-width: 100%;"/>
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- Run the playbook, and navigate to the http://<ELKVM-PUBLIC-IP>:5061 to check that the installation worked as expected.
+- The playbook is install-elk.yml and should reside in /etc/ansible/
+- The /etc/ansible/hosts.yml  How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._

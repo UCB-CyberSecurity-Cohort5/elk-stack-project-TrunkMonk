@@ -86,7 +86,8 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat collects 
+- Filebeat - When installed on a VM, Filebeat collects log files from the file system, various applications or services on the host then forwards the data to Logstash for processing.  For example, we can use Filebeat to gather authentication logs from the file system to more easily analyze the volume, frequency, source location, successes, and failures of SSH logins to a monitored host.
+- Metricbeat - When installed on a VM, Metric beat collects machine metrics such as uptime, service and system performance and sends this data to Logstash for processing.   Some of the metrics we might expect to see are the number of Docker containers on a machine, their memory usage, CPU usage, network and disk IO.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
